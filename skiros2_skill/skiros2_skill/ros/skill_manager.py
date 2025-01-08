@@ -498,5 +498,5 @@ class SkillManagerNode(DiscoverableNode):
 
     def run(self):
         # Note: The WMI must spin initially to set up the skill manager. During operation, the SM-node does the spinning
-        self.sm._wmi._allow_spinning = False
+        self.sm._wmi._allow_spinning = True
         rclpy.spin(self)
